@@ -1,0 +1,22 @@
+{
+  "name": "hello-skills",
+  "owner": {
+    "name": "Test User",
+    "email": "test@example.com"
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "description": "A sample Hello World skill for testing and learning"
+  },
+  "plugins": [
+    {
+      "name": "hello-skills",
+      "description": "Sample hello world skill for testing and learning how to create Claude Code skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./hello-world"
+      ]
+    }
+  ]
+}

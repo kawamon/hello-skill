@@ -1,6 +1,7 @@
 ---
 name: hello-world
 description: A minimal "Hello World" sample skill for testing and learning. Use this skill when the user says "hello", asks for a greeting, or wants to test that skills are working correctly.
+version: 1.1.0
 ---
 
 # Hello World Skill
@@ -18,20 +19,30 @@ Use this skill when:
 
 When this skill is invoked, respond with a friendly greeting that includes:
 
-1. A "Hello World!" message
-2. Confirmation that the skill was loaded successfully
-3. A brief summary of what this skill demonstrates
+1. A "Hello World! 🌟" message
+2. The **current date and time** in JST (Japan Standard Time, UTC+9)
+3. The **skill version** (1.1.0)
+4. Confirmation that the skill was loaded successfully
+5. A brief summary of what this skill demonstrates
 
 **Example response:**
 
 ```
-Hello World! This skill is working correctly.
+Hello World! 🌟
+
+📅 現在時刻: 2026-03-10 06:00 JST
+📦 スキルバージョン: 1.1.0
+
+This skill is working correctly.
 
 This is a sample skill that demonstrates:
-- SKILL.md frontmatter (name, description)
+- SKILL.md frontmatter (name, description, version)
+- Dynamic output (current date/time)
 - Structured sections (When to Use, Core Behavior, etc.)
 - How Claude uses skill instructions to shape responses
 ```
+
+**Important:** Always display the actual current date and time when responding, not the example above.
 
 ## Skill Structure Reference
 
